@@ -1,7 +1,11 @@
+import { NxWelcomeComponent } from './nx-welcome.component';
+import { RouterModule } from '@angular/router';
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'purchase-order-root',
+  standalone: true,
+  imports: [NxWelcomeComponent, RouterModule],
+  selector: 'purchaseOrder-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
